@@ -57,14 +57,24 @@ header.imprint a {
 }
 
 header.imprint a img.logo {
-  height: 60px;
+  height: 50px;
   margin-bottom: 8px;
+  order: 2;
+}
+
+header.imprint a img.typo {
+  height: 90px;
   order: 1;
 }
 
-header.imprint a img.type {
-  height: 75px;
-  order: 2;
+@media screen and (max-width: 600px) {
+  header.imprint a img.logo {
+    width: 50vw;
+  }
+  
+  header.imprint a img.typo {
+    display: none;
+  }
 }
 
 footer {
