@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quintschaf</title>
+    <script>
+      if (location.protocol !== "https:") {
+        location.replace(
+          `https:${location.href.substring(location.protocol.length)}`
+        );
+      }
+    </script>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body class="home">
@@ -16,11 +23,6 @@
     </footer>
     <script src="index.js"></script>
     <script>
-      if (location.protocol !== "https:") {
-        location.replace(
-          `https:${location.href.substring(location.protocol.length)}`
-        );
-      }
       Animator.hook(document.querySelector("main.home"));
     </script>
   </body>
