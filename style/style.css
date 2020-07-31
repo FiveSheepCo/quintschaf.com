@@ -6,6 +6,10 @@ body {
   height: 100vh;
 }
 
+body.home {
+  overflow: hidden;
+}
+
 body.imprint {
   background: hsl(0,0%,95%);
 }
@@ -27,6 +31,7 @@ main.home {
   justify-content: center;
   align-items: center;
   height: calc(100% - 50px);
+  overflow: hidden;
 }
 
 .home img.logo {
