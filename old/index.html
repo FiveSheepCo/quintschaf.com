@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quintschaf</title>
+    <script>
+      if (location.protocol !== "https:") {
+        location.replace(
+          `https:${location.href.substring(location.protocol.length)}`
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body class="home">
+    <main class="home">
+      <img class="logo" src="res/logo.svg" />
+      <img class="typo" src="res/typo.svg" />
+    </main>
+    <footer>
+      <a href="imprint.html">Imprint (DE)</a>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+      Animator.hook(document.querySelector("main.home"));
+    </script>
+  </body>
+</html>
