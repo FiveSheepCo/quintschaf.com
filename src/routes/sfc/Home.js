@@ -1,10 +1,10 @@
 import { h } from 'preact';
-import style from './style';
+import style from '../scss/Home';
+import Jumbo9List from '../../components/sfc/Jumbo9List';
 
 const Home = () => (
 	<div class={style.home}>
-		<h1>Home</h1>
-		<p>This is the Home component.</p>
+		<Jumbo9List/>
 	</div>
 );
 

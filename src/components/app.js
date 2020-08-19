@@ -6,7 +6,7 @@ import Header from './sfc/Header';
 import Banner from './sfc/Banner';
 
 // Code-splitting is automated for routes
-import Home from '../routes/home';
+import Home from '../routes/sfc/Home';
 
 export default class App extends Component {
 	
