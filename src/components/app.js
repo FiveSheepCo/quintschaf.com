@@ -1,11 +1,12 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
+import { Link } from 'preact-router/match';
 
-import Header from './header';
+import Header from './sfc/Header';
+import Banner from './sfc/Banner';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
-import Profile from '../routes/profile';
 
 export default class App extends Component {
 	
@@ -21,10 +22,15 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Header />
+				<Banner>
+					<Link href="/app/9list">
+						<span>
+							Coming Soon: 9List &mdash; Shopping made easy.<br/>
+						</span>
+					</Link>
+				</Banner>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
 				</Router>
 			</div>
 		);

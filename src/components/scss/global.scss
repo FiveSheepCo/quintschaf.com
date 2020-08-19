@@ -1,0 +1,25 @@
+@import "../../../node_modules/include-media/dist/include-media";
+
+$brand-color:  hsl(190,75%,40%);
+
+$header-height: 45px;
+$header-item-spacing: 2.5rem;
+$header-bg: hsl(0,0%,15%);
+$header-a-fg: hsl(0,0%,85%);
+$header-a-fg-anim: hsl(0,0%,95%);
+
+// Breakpoints
+$bp-small: 320px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-huge: 1400px;
+$breakpoints: (
+    'small': $bp-small,
+    'medium': $bp-medium,
+    'large': $bp-large,
+    'huge': $bp-huge
+);
+
+a {
+    text-decoration: none;
+}
