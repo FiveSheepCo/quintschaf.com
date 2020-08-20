@@ -9,9 +9,8 @@ const Header = () => (
 			<Link class={style.logo} href="/">
 				<img src="../../assets/logo.svg"/>
 			</Link>
-			<nav>
+			<nav role="navigation">
 				<Link activeClassName={style.active} href="/app/9list">9List</Link>
-				<Link activeClassName={style.active} href="/app/drillbase">DrillBase</Link>
 				<Link activeClassName={style.active} href="/app/drillbase">Developers</Link>
 			</nav>
 		</div>

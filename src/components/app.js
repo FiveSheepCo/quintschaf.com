@@ -4,9 +4,11 @@ import { Link } from 'preact-router/match';
 
 import Header from './sfc/Header';
 import Banner from './sfc/Banner';
+import Footer from './sfc/Footer';
 
 // Code-splitting is automated for routes
 import Home from '../routes/sfc/Home';
+import Imprint from '../routes/sfc/Imprint';
 
 export default class App extends Component {
 	
@@ -21,7 +23,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
-				<Header />
+				<Header/>
 				<Banner>
 					<Link href="/app/9list">
 						<span>
@@ -31,7 +33,9 @@ export default class App extends Component {
 				</Banner>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
+					<Imprint path="/imprint" />
 				</Router>
+				<Footer/>
 			</div>
 		);
 	}
