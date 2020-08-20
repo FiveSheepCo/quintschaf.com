@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-import { Link } from 'preact-router/match';
+import { Link, createHashHistory } from 'preact-router/match';
 
 import PageWrapper from './sfc/PageWrapper';
 import Header from './sfc/Header';
@@ -35,7 +35,7 @@ export default class App extends Component {
 							</span>
 						</Link>
 					</Banner>
-					<Router onChange={this.handleRoute}>
+					<Router history={createHashHistory()} onChange={this.handleRoute}>
 						<Home path="/" />
                         <App9List path="/app/9list" />
 						<Developers path="/developers" />
