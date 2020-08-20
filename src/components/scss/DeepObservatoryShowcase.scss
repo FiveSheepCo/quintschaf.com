@@ -1,0 +1,38 @@
+@import "global";
+
+.showcase {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    color: hsl(0,0%,15%);
+    background: hsl(0,0%,90%);
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.75rem;
+
+        @include media('>=medium') {
+            font-size: 2rem;
+        }
+    }
+
+    .subtitle {
+        text-align: center;
+        text-align-last: center;
+        font-size: 1rem;
+
+        @include media('>=medium') {
+            font-size: 1.25rem;
+        }
+    }
+
+    .badges {
+        margin: 2rem 0;
+        img {
+            padding: 0 0.75rem;
+        }
+    }
+}

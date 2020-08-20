@@ -1,0 +1,75 @@
+@import "global";
+
+.header {
+  flex: none;
+  width: 100%;
+  height: $header-height;
+
+  .bg {
+    width: 100%;
+    height: $header-height;
+    background: $header-bg;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: fixed;
+    background: transparentize($header-bg, 0.2);
+    backdrop-filter: saturate(200%) blur(20px);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    width: 100vw;
+
+    a.logo {
+      align-self: center;
+      padding: 0 calc(min(max(2vw, 0.5rem), #{$header-item-spacing}));
+
+      img {
+        align-self: center;
+        width: $header-height * 0.6;
+        height: $header-height * 0.6;
+        justify-self: flex-start;
+        opacity: 0.85;
+        transition: all 0.2s ease;
+
+        &:hover {
+          filter: brightness(45%) sepia(100%) saturate(200%) hue-rotate(145deg);
+          opacity: 1;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      justify-self: flex-end;
+
+      @include media('<medium') {
+        display: none;
+      }
+
+      a {
+        color: $header-a-fg;
+        padding: 0 calc(min(max(2vw, 0.5rem), #{$header-item-spacing}));
+        line-height: $header-height;
+        transition: color 0.2s ease;
+        text-decoration: none;
+
+        &.active {
+            color: lighten($brand-color, 10%);
+        }
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}

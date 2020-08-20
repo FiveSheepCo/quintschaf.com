@@ -1,0 +1,12 @@
+@import "../../components/scss/global";
+
+.imprint {
+    .content {
+        padding: 1rem 3rem;
+        background: white;
+        flex-grow: 1;
+        border-radius: .35rem;
+        overflow: auto;
+    }
+}
+

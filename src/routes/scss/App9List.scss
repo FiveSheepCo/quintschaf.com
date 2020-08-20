@@ -1,0 +1,118 @@
+@import "../../components/scss/global";
+
+$icon-size: 1.33rem;
+$icon-spacing: 0.5rem;
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 3rem 0 0 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .subscribeSubtitle {
+        font-size: 0.85rem;
+        margin-top: 0.33rem;
+    }
+
+    .featureGrid {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 4rem;
+
+        @include media('>=medium') {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 4rem 3rem;
+        }
+
+        .gridEntry {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1.25rem 0;
+
+            @include media('>=medium') {
+                padding: 0;
+
+                &:nth-child(2n-1) {
+                    justify-content: flex-end;
+
+                    .icon {
+                        order: 1;
+                    }
+
+                    .title {
+                        order: 0;
+                    }
+
+                    .break {
+                        order: 2;
+                    }
+
+                    .body {
+                        order: 3;
+                        margin-right: 2.33rem;
+                    }
+                }
+    
+                &:nth-child(2n) {
+                    justify-content: flex-start;
+
+                    .icon {
+                        order: 0;
+                    }
+
+                    .title {
+                        order: 1;
+                    }
+
+                    .break {
+                        order: 2;
+                    }
+
+                    .body {
+                        order: 3;
+                        margin-left: 2.33rem;
+                    }
+                }
+            }
+
+            // &:nth(n+1) {
+            //     justify-self: start;
+            // }
+
+            .icon {
+                width: $icon-size;
+                height: $icon-size;
+                margin: 0 .5rem;
+            }
+
+            .title {
+                font-size: $icon-size;
+                font-weight: bold;
+            }
+
+            .break {
+                flex-basis: 100%;
+                height: 0;
+                margin-bottom: .33rem;
+            }
+
+            .body {
+            }
+        }
+    }
+}
