@@ -45,8 +45,33 @@ $icon-spacing: 0.5rem;
             align-items: center;
             padding: 1.25rem 0;
 
+            .icon {
+                width: $icon-size;
+                height: $icon-size;
+                margin: 0 .5rem 0 -0.25rem;
+            }
+
+            .title {
+                font-size: $icon-size;
+                font-weight: bold;
+            }
+
+            .break {
+                flex-basis: 100%;
+                height: 0;
+                margin-bottom: .33rem;
+            }
+
+            .body {
+                opacity: 0.9;
+            }
+
             @include media('>=medium') {
                 padding: 0;
+
+                .icon {
+                    margin: 1rem 1rem -0.75rem 1rem;
+                }
 
                 &:nth-child(2n-1) {
                     justify-content: flex-end;
@@ -65,7 +90,7 @@ $icon-spacing: 0.5rem;
 
                     .body {
                         order: 3;
-                        margin-right: 2.33rem;
+                        margin-right: 3.33rem;
                     }
                 }
     
@@ -86,33 +111,9 @@ $icon-spacing: 0.5rem;
 
                     .body {
                         order: 3;
-                        margin-left: 2.33rem;
+                        margin-left: 3.33rem;
                     }
                 }
-            }
-
-            // &:nth(n+1) {
-            //     justify-self: start;
-            // }
-
-            .icon {
-                width: $icon-size;
-                height: $icon-size;
-                margin: 0 .5rem;
-            }
-
-            .title {
-                font-size: $icon-size;
-                font-weight: bold;
-            }
-
-            .break {
-                flex-basis: 100%;
-                height: 0;
-                margin-bottom: .33rem;
-            }
-
-            .body {
             }
         }
     }
