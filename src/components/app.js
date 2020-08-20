@@ -21,7 +21,10 @@ export default class App extends Component {
 	 *	@param {string} event.url	The newly routed URL
 	 */
 	handleRoute = e => {
-		this.currentUrl = e.url;
+        this.currentUrl = e.url;
+        if (window.scrollX != 0 || window.scrollY != 0) {
+            window.scrollTo(0, 0);
+        }
 	};
 
 	render() {

@@ -1,5 +1,7 @@
 @import "global";
 
+$footer-font-size: 14px;
+
 .footer {
     flex: none;
     padding: 1rem 1.5rem;
@@ -9,10 +11,18 @@
     justify-content: flex-end;
     align-items: center;
 
+    .copyright {
+        color: $footer-link-fg;
+        margin-right: auto;
+        font-size: $footer-font-size;
+    }
+
     .nav {
+        justify-self: flex-end;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        font-size: $footer-font-size;
 
         a {
             color: $footer-link-fg;
