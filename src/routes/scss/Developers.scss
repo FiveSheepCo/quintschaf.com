@@ -1,0 +1,18 @@
+@import "../../components/scss/global.scss";
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+        margin: 3rem 0 0 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+}

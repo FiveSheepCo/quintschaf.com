@@ -1,7 +1,8 @@
 @import "global";
 
 .footer {
-    padding: 2rem 2rem;
+    flex: none;
+    padding: 1rem 1.5rem;
     background: $footer-bg;
     display: flex;
     flex-flow: row wrap;

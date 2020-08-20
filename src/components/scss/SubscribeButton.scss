@@ -1,0 +1,17 @@
+@import "global";
+
+.btn {
+    background: $brand-color;
+    padding: 1rem 2rem;
+    color: white;
+    transition: background .2s ease;
+    border-radius: 0.33rem;
+
+    &:hover {
+        background: darken($brand-color, 10%);
+    }
+
+    &:focus, &:active {
+        background: darken($brand-color, 20%);
+    }
+}
