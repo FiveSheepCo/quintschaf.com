@@ -13,16 +13,33 @@ $footer-font-size: 14px;
 
     .copyright {
         color: $footer-link-fg;
-        margin-right: auto;
         font-size: $footer-font-size;
+        flex-basis: 100%;
+        text-align: center;
+
+        @include media('>=medium') {
+            text-align: left;
+            margin-right: auto;
+            flex-basis: initial;
+        }
     }
 
     .nav {
-        justify-self: flex-end;
+        margin-top: .5rem;
+        flex-basis: 100%;
+        justify-self: center;
+        justify-content: center;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         font-size: $footer-font-size;
+
+        @include media('>=medium') {
+            margin: 0;
+            flex-basis: initial;
+            justify-content: initial;
+            justify-self: flex-end;
+        }
 
         a {
             color: $footer-link-fg;
