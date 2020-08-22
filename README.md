@@ -3,9 +3,9 @@
 
 ## Contributing
 
-1. Commit code changes without the docs/ folder
+1. Commit code changes without the docs/ folder<br>
    _This is needed for better commit readability and code review._
-2. Commit the docs/ folder separately with the commit message :hammer: Build
+2. Commit the docs/ folder separately with a simple ":hammer: Build" message<br>
    _So we can easily identify pure builds without code changes._
 
 ## Building
