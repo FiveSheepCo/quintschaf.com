@@ -1,6 +1,14 @@
-# preact
+# quintschaf.com
+> The official Quintschaf website.
 
-## CLI Commands
+## Contributing
+
+1. Commit code changes without the docs/ folder
+   _This is needed for better commit readability and code review._
+2. Commit the docs/ folder separately with the commit message :hammer: Build
+   _So we can easily identify pure builds without code changes._
+
+## Building
 
 ``` bash
 # install dependencies
@@ -14,9 +22,4 @@ npm run build
 
 # test the production build locally
 npm run serve
-
-# run tests with jest and enzyme
-npm run test
 ```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
