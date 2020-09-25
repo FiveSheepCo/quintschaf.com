@@ -3,14 +3,16 @@ import { Link } from 'preact-router/match';
 import style from '../scss/Jumbo9List';
 import AppStoreButton from './AppStoreButton';
 import SubscribeButton from './SubscribeButton';
+import NineListIcon from './9ListIcon';
 
 const Jumbo9List = () => (
 	<div class={style.jumbo}>
         <h2>9List</h2>
         <span class={style.subtitle}>
             Shopping made easy.<br/>
-            Coming soon for iPhone.<br/>
+            Coming <span class={style.bold}>October 15th</span> for iPhone.<br/>
         </span>
+        <NineListIcon/>
         <Link class={style.moreInfo} href="/app/9list">
             See details, features and more
         </Link>

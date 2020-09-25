@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { Clock, Bell, Check, MapPin, DollarSign } from 'preact-feather';
 import style from '../scss/App9List';
 import SubscribeButton from '../../components/sfc/SubscribeButton';
+import NineListIcon from '../../components/sfc/9ListIcon';
 
 const gridEntries = [
     {
@@ -30,8 +31,9 @@ const App9List = () => (
 	<main class={style.main}>
         <h1>9List</h1>
         <div class={style.subtitle}>
-            Coming soon.
+            Coming October 15th.
         </div>
+        <NineListIcon shadow={true}/>
         <div class={style.featureGrid}>
             { gridEntries.map(({icon, title, body}) => (
                 <div class={style.gridEntry}>

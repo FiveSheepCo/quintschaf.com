@@ -9,6 +9,10 @@
     padding: 4rem 2rem;
     color: white;
 
+    span.bold {
+        font-weight: bold;
+    }
+
     h2 {
         margin: 0;
         padding: 0;
@@ -30,6 +34,7 @@
     .moreInfo {
         color: white;
         margin-bottom: 2rem;
+        text-decoration: underline;
 
         &:hover {
             text-decoration: underline;
