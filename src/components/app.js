@@ -11,6 +11,7 @@ import Footer from './sfc/Footer';
 // Code-splitting is automated for routes
 import Home from '../routes/sfc/Home';
 import Imprint from '../routes/sfc/Imprint';
+import PrivacyPolicy from '../routes/sfc/PrivacyPolicy';
 import Developers from '../routes/sfc/Developers';
 import App9List from '../routes/sfc/App9List';
 
@@ -44,6 +45,7 @@ export default class App extends Component {
                         <App9List path="/app/9list" />
 						<Developers path="/developers" />
 						<Imprint path="/imprint" />
+                        <PrivacyPolicy path="/privacy" />
 					</Router>
 				</PageWrapper>
 				<Footer />

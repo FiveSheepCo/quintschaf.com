@@ -19,6 +19,7 @@ const Footer = () => (
         </div>
         <div class={style.nav}>
             <Link href="/imprint">Imprint</Link>
+            <Link href="/privacy">Privacy</Link>
         </div>
     </footer>
 );

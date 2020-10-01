@@ -44,6 +44,11 @@ $footer-font-size: 14px;
         a {
             color: $footer-link-fg;
             transition: color .2s ease;
+            padding-right: 1rem;
+
+            &:last-child {
+                padding-right: 0;
+            }
 
             &:hover {
                 color: darken($footer-link-fg, 10%);
