@@ -34,11 +34,11 @@ export default class App extends Component {
 				<Header />
 				<PageWrapper>
 					<Banner>
-						<Link href="/app/9list">
+						<a target="_blank" rel="noreferrer" href="https://apps.apple.com/tt/app/9list/id1526016990">
 							<span>
-								Coming Soon: 9List &mdash; More Information<br/>
+								9List is now available for iPhone!<br />
 							</span>
-						</Link>
+						</a>
 					</Banner>
 					<Router history={createHashHistory()} onChange={this.handleRoute}>
 						<Home path="/" />

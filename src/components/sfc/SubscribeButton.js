@@ -1,9 +1,7 @@
-import { h } from 'preact';
-import { Link } from 'preact-router/match';
 import style from '../scss/SubscribeButton';
 
-const SubscribeButton = ({href, children}) => (
-	<a target="_blank" href={href} class={style.btn}>
+const SubscribeButton = ({children}) => (
+	<a target="_blank" rel="noreferrer" href="https://eepurl.com/hbk8wT" class={style.btn}>
         {children}
     </a>
 );

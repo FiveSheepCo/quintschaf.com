@@ -1,0 +1,31 @@
+.symbol {
+
+    .linkWrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        color: hsl(0,0%,15%);
+
+        &:link, &:hover, &:active {
+            color: hsl(0,0%,15%);
+        }
+    }
+
+    .icon {
+        object-fit: contain;
+        object-position: center;
+        width: 128px;
+        height: 128px;
+        border-radius: 2rem;
+        border: solid .2rem white;
+    
+        &.shadow {
+            box-shadow: 0 .25rem .3rem hsla(0,0%,0%,.1);
+        }
+    }
+
+    .appName {
+        margin-top: .5rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

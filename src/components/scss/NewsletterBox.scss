@@ -1,0 +1,27 @@
+@import "global";
+
+.box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: $brand-color-bg-toned;
+    padding: 4rem 2rem;
+    color: white;
+
+    span.bold {
+        font-weight: bold;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}

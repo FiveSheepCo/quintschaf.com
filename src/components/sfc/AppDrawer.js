@@ -1,0 +1,22 @@
+import style from '../scss/AppDrawer';
+import AppSymbol from './AppSymbol';
+
+const AppDrawer = () => (
+	<div class={style.drawer}>
+        <h2>Apps</h2>
+        {/* <span class={style.subtitle}>
+            Take a look<br />
+        </span> */}
+        <div class={style.inner}>
+            <AppSymbol
+                name="9List"
+                img="./../../assets/9list.svg"
+                href="/app/9list"
+                showShadow={true}
+                showName={true}
+            />
+        </div>
+    </div>
+);
+
+export default AppDrawer;
