@@ -14,6 +14,8 @@ import Imprint from '../routes/sfc/Imprint';
 import PrivacyPolicy from '../routes/sfc/PrivacyPolicy';
 import Developers from '../routes/sfc/Developers';
 import App9List from '../routes/sfc/App9List';
+import AppOverview from '../routes/sfc/AppOverview';
+import AppMyKeyboard from '../routes/sfc/AppMyKeyboard';
 
 export default class App extends Component {
 	
@@ -34,15 +36,17 @@ export default class App extends Component {
 				<Header />
 				<PageWrapper>
 					<Banner>
-						<a target="_blank" rel="noreferrer" href="https://apps.apple.com/tt/app/9list/id1526016990">
+						<a target="_blank" rel="noreferrer" href="https://testflight.apple.com/join/rTGgFRe4">
 							<span>
-								9List is now available for iPhone!<br />
+								MyKeyboard is now available for beta testing!<br />
 							</span>
 						</a>
 					</Banner>
 					<Router history={createHashHistory()} onChange={this.handleRoute}>
 						<Home path="/" />
+                        <AppOverview path="/apps" />
                         <App9List path="/app/9list" />
+                        <AppMyKeyboard path="/app/mykeyboard" />
 						<Developers path="/developers" />
 						<Imprint path="/imprint" />
                         <PrivacyPolicy path="/privacy" />

@@ -21,6 +21,21 @@
     }
 
     .inner {
+        display: flex;
+        flex-flow: row wrap;
         margin-top: 2rem;
+
+        @include media('<small') {
+            flex-flow: column nowrap;
+        }
+    }
+
+    .inner > * {
+        margin: 0 1rem;
+
+        @include media('<small') {
+            margin: .5rem auto;
+            flex-flow: column nowrap;
+        }
     }
 }

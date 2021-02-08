@@ -1,0 +1,14 @@
+@import "global";
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: .33rem;
+    background: rgb(15,84,205);
+    background: linear-gradient(32deg, rgba(15,84,205,1) 0%, rgba(0,170,224,1) 100%);
+    color: white;
+    transition: all .25s ease;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}

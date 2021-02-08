@@ -1,4 +1,5 @@
 .symbol {
+    position: relative;
 
     .linkWrapper {
         display: flex;
@@ -10,17 +11,45 @@
         }
     }
 
-    .icon {
-        object-fit: contain;
-        object-position: center;
+    .iconWrapper {
         width: 128px;
         height: 128px;
+        max-width: 128px;
+        max-height: 128px;
+
         border-radius: 2rem;
         border: solid .2rem white;
-    
+
+        // Clip children to container
+        overflow: hidden;
+
         &.shadow {
             box-shadow: 0 .25rem .3rem hsla(0,0%,0%,.1);
         }
+    }
+
+    .icon {
+        object-fit: contain;
+        object-position: center;
+        image-rendering: crisp-edges;
+        width: 512px;
+        height: 512px;
+        transform-origin: top left;
+        transform: scale(0.24);
+    }
+
+    .betaBadge {
+        position: absolute;
+        top: .25rem;
+        right: .25rem;
+        border-radius: .33rem;
+        z-index: 1000;
+        padding: 0.2rem .5rem;
+        background: hsla(0,0%,0%,0.5);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 10pt;
     }
 
     .appName {

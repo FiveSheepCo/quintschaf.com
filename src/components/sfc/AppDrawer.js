@@ -15,6 +15,14 @@ const AppDrawer = () => (
                 showShadow={true}
                 showName={true}
             />
+            <AppSymbol
+                name="MyKeyboard"
+                img="./../../assets/mykeyboard.svg"
+                href="/app/mykeyboard"
+                showShadow={true}
+                showName={true}
+                showBetaBadge={true}
+            />
         </div>
     </div>
 );
