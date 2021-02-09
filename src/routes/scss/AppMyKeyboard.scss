@@ -49,7 +49,7 @@ $icon-spacing: 0.5rem;
         display: flex;
         flex-flow: column nowrap;
         padding-bottom: 2rem;
-        max-width: 800px;
+        max-width: calc(800px + 2rem);
 
         @include media('>=medium') {
             display: grid;
