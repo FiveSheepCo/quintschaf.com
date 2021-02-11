@@ -3,10 +3,10 @@
 
 ## Contributing
 
-1. Commit code changes without the docs/ folder<br>
+1. Commit code changes without the `docs/` folder<br>
    _This is needed for better commit readability and code review._
-2. Commit the docs/ folder separately with a simple ":hammer: Build" message<br>
-   _So we can easily identify pure builds without code changes._
+2. Place files that should be added to the `docs/` folder in `docs-extra/`.
+3. Our GitHub Workflow will automatically deploy changes once they're merged into `master`.
 
 ## Building
 
