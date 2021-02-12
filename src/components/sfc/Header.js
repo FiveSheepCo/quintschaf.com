@@ -12,6 +12,7 @@ const Header = () => (
 			<nav role="navigation">
 				<Link activeClassName={style.active} href="/apps">Apps</Link>
 				<Link activeClassName={style.active} href="/developers">Developers</Link>
+                <Link activeClassName={style.active} href="/support">Support</Link>
 			</nav>
 		</div>
 	</header>

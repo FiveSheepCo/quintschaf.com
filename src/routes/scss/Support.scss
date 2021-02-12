@@ -1,0 +1,40 @@
+@import "../../components/scss/global.scss";
+
+.support {
+	min-height: 100%;
+	width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 550px;
+
+    .supportBtn {
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background: $brand-color;
+        padding: 1rem 2rem;
+        color: white;
+        transition: background .2s ease;
+        border-radius: 0.33rem;
+    
+        &:hover {
+            background: darken($brand-color, 10%);
+        }
+    
+        &:focus, &:active {
+            background: darken($brand-color, 20%);
+        }
+
+        .logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 1rem;
+        }
+    }
+
+    .supportEmail {
+        color: hsl(0,0%,40%);
+        text-decoration: underline;
+    }
+}

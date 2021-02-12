@@ -13,9 +13,11 @@ import Home from '../routes/sfc/Home';
 import Imprint from '../routes/sfc/Imprint';
 import PrivacyPolicy from '../routes/sfc/PrivacyPolicy';
 import Developers from '../routes/sfc/Developers';
-import App9List from '../routes/sfc/App9List';
+import Support from '../routes/sfc/Support';
 import AppOverview from '../routes/sfc/AppOverview';
+import App9List from '../routes/sfc/App9List';
 import AppMyKeyboard from '../routes/sfc/AppMyKeyboard';
+import Business from '../routes/sfc/Business';
 
 export default class App extends Component {
 	
@@ -48,6 +50,8 @@ export default class App extends Component {
                         <App9List path="/app/9list" />
                         <AppMyKeyboard path="/app/mykeyboard" />
 						<Developers path="/developers" />
+                        <Support path="/support" />
+                        <Business path="/business" />
 						<Imprint path="/imprint" />
                         <PrivacyPolicy path="/privacy" />
 					</Router>

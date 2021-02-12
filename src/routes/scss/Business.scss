@@ -1,0 +1,15 @@
+@import "../../components/scss/global.scss";
+
+.business {
+	min-height: 100%;
+	width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 550px;
+
+    .businessLink {
+        color: hsl(0,0%,40%);
+        text-decoration: underline;
+    }
+}

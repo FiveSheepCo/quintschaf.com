@@ -17,8 +17,11 @@ const Footer = () => (
             Copyright &copy; {getCopyrightYearRange()} Quintschaf GbR. All rights reserved.
         </div>
         <div class={style.nav}>
-            <Link href="/imprint">Imprint</Link>
+            <Link href="/apps">Apps</Link>
+            <Link href="/support">Support</Link>
+            <Link href="/business">Business</Link>
             <Link href="/privacy">Privacy</Link>
+            <Link href="/imprint">Imprint</Link>
         </div>
     </footer>
 );
