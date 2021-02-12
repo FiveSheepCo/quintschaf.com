@@ -7,9 +7,8 @@ const getCopyrightYearRange = () => {
     const currentYear = new Date().getFullYear()
     if (currentYear > startYear) {
         return `${startYear} - ${currentYear}`;
-    } else {
-        return startYear.toString();
     }
+    return startYear.toString();
 };
 
 const Footer = () => (

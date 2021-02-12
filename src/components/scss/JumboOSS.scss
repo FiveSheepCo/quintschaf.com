@@ -7,6 +7,8 @@
     align-items: center;
     padding: 4rem 2rem;
     color: hsl(0,0%,15%);
+    background-image: url('./../../assets/patterns/geometry.png');
+    background-repeat: repeat;
 
     h2 {
         margin: 0;
@@ -38,6 +40,7 @@
         padding: 1rem 2rem;
         color: hsl(0,0%,25%);
         transition: all .25s ease;
+        background: white;
 
         &:hover {
             border: 1px solid darken($brand-color, 5%);
