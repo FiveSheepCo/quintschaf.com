@@ -5,6 +5,7 @@ $footer-font-size: 14px;
 .footer {
     flex: none;
     padding: 1rem 1.5rem;
+    padding-bottom: 3.25rem; /* JivoChat */
     background: $footer-bg;
     display: flex;
     flex-flow: row wrap;
