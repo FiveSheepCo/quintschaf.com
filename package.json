@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "preact build --dest docs --no-prerender; cp CNAME docs/CNAME; cp -r docs-extra/* docs/",
-    "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch",
-    "lint": "eslint src",
-    "test": "jest"
+    "build": "npx preact build --dest docs --no-prerender; cp CNAME docs/CNAME; cp -r docs-extra/* docs/",
+    "serve": "npx sirv build --port 8080 --cors --single",
+    "dev": "npx preact watch",
+    "lint": "npx eslint src",
+    "test": "npx jest"
   },
   "alias": {
     "react": "preact/compat",
