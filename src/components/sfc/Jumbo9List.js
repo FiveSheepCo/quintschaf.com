@@ -14,7 +14,7 @@ const Jumbo9List = () => (
         <Link class={style.moreInfo} href="/app/9list">
             Features, Details and more
         </Link>
-        <AppStoreButton href="https://apps.apple.com/tt/app/9list/id1526016990" />
+        <AppStoreButton href="https://apps.apple.com/app/9list/id1526016990" />
     </div>
 );
 

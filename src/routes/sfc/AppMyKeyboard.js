@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import style from '../scss/AppMyKeyboard'
 import AppSymbol from '../../components/sfc/AppSymbol'
-import TestFlightButton from '../../components/sfc/TestFlightButton'
+import AppStoreButton from '../../components/sfc/AppStoreButton';
 
 const VSpacer = ({length}) => (
     <div style={`display:block;min-height:${length}rem;max-height:${length}rem;`} />
@@ -24,34 +24,35 @@ const gridEntries = [
         body: 'Create as many keyboard layouts as you want and switch them up when you feel like it.'
     },
     {
-        image: '../../assets/mykeyboard/Logo.png',
-        title: 'Join the Beta',
-        body: 'All features are free during the Beta, so go wild!'
+        image: '../../assets/mykeyboard/Icon.png',
+        title: 'Try it today &mdash; for free!',
+        body: 'MyKeyboard is out now, we\'re sure you\'ll love it!'
     },
 ]
 
 const AppMyKeyboard = () => (
     <main class={style.main}>
         <h1>MyKeyboard</h1>
-        <div class={style.subtitle}>Now available for beta testing.</div>
+        <div class={style.subtitle}>The fully customizable Keyboard.</div>
         <AppSymbol
             img="./../../assets/mykeyboard.svg"
             href="/app/mykeyboard"
             showShadow={true}
             showName={false}
-            showBetaBadge={true}
+            showBetaBadge={false}
         />
         <VSpacer length={2} />
         <div class={style.featureGrid}>
             {gridEntries.map(({ image, title, body }) => (
                 <div class={style.gridEntry}>
-                    <span class={style.title}>{title}</span>
+                    { /* eslint-disable-next-line react/no-danger */ }
+                    <span class={style.title} dangerouslySetInnerHTML={{__html: title}} />
                     <img src={image} class={style.image} />
                     <span class={style.body}>{body}</span>
                 </div>
             ))}
         </div>
-        <TestFlightButton href="https://testflight.apple.com/join/rTGgFRe4" />
+        <AppStoreButton href="https://apps.apple.com/app/mykeyboard-fully-customizable/id1455404109" />
         <div class={style.seotext}>
             <div class={style.seotitle}>App Description</div>
             MyKeyboard is a new keyboard for iOS, offering many advanced features:

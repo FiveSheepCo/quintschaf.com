@@ -21,7 +21,7 @@ const AppDrawer = () => (
                 href="/app/mykeyboard"
                 showShadow={true}
                 showName={true}
-                showBetaBadge={true}
+                showBetaBadge={false}
             />
         </div>
     </div>

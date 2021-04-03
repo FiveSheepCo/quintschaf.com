@@ -38,11 +38,11 @@ export default class App extends Component {
 				<Header />
 				<PageWrapper>
 					<Banner>
-						<a target="_blank" rel="noreferrer" href="https://testflight.apple.com/join/rTGgFRe4">
-							<span>
-								MyKeyboard is now available for beta testing!<br />
+                        <Link href="/app/mykeyboard">
+                            <span>
+								MyKeyboard is out now &mdash; give it a try!<br />
 							</span>
-						</a>
+                        </Link>
 					</Banner>
 					<Router history={createHashHistory()} onChange={this.handleRoute}>
 						<Home path="/" />

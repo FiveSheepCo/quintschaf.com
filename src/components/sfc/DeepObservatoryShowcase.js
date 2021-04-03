@@ -7,7 +7,7 @@ const DeepObservatoryShowcase = () => (
 	<div class={style.showcase}>
         <h2>DeepObservatory</h2>
         <div class={style.subtitle}>
-            Nested observable propagation in Swift.<br/>
+            Nested observable propagation in Swift.<br />
             Available for iOS 13 and higher.
         </div>
         <div class={style.badges}>
