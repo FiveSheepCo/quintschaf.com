@@ -10,7 +10,7 @@ const VSpacer = ({length}) => (
 
 const JumboMyKeyboard = () => (
 	<div class={style.jumbo}>
-        <h2>MyKeyboard</h2>
+        <h2>MyKeyboard 3</h2>
         <span class={style.subtitle}>
             The fully customizable keyboard<br />
         </span>

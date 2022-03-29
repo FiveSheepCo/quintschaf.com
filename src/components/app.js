@@ -40,7 +40,7 @@ export default class App extends Component {
 					<Banner>
                         <Link href="/app/mykeyboard">
                             <span>
-								MyKeyboard is out now &mdash; give it a try!<br />
+								MyKeyboard 3 is out now &mdash; give it a try!<br />
 							</span>
                         </Link>
 					</Banner>
