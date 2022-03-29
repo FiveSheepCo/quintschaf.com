@@ -1,12 +1,60 @@
 @import "global";
 
+.splitPaneView {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > .pane {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        a:first-child {
+            transition: all .25s ease-out;
+    
+            &:hover {
+                transform: scale(1.05) rotateZ(2.5deg);
+            }
+        }
+    }
+
+    > .footer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: .5rem 1rem;
+        background: hsla(0,0%,0%,.5);
+        border-radius: .33rem;
+
+        > .footerLink {
+            opacity: .5;
+            transition: all .25s ease-out;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        > .footerLinkActive {
+            opacity: 1;
+            cursor: inherit;
+        }
+    }
+}
+
 .jumbo {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
     background: $brand-color-bg-toned;
-    padding: 4rem 2rem;
     color: white;
     background-image: url('./../../assets/patterns/ep_naturalblack.png');
     background-repeat: repeat;

@@ -42,7 +42,7 @@ const App9List = () => (
                 </div>
             ))}
         </div>
-        <AppStoreButton href='https://apps.apple.com/tt/app/9list/id1526016990' />
+        <AppStoreButton href='https://apps.apple.com/app/9list/id1526016990' />
         <div class={style.seotext}>
             <div class={style.seotitle}>App Description</div>
             9List is a shopping list. If that doesn’t sound interesting, it’s
