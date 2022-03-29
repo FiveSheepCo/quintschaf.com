@@ -44,7 +44,7 @@ const AppMyKeyboard = () => (
         <VSpacer length={2} />
         <div class={style.featureGrid}>
             {gridEntries.map(({ image, title, body }) => (
-                <div class={style.gridEntry}>
+                <div key={title} class={style.gridEntry}>
                     { /* eslint-disable-next-line react/no-danger */ }
                     <span class={style.title} dangerouslySetInnerHTML={{__html: title}} />
                     <img src={image} class={style.image} />

@@ -34,7 +34,7 @@ const App9List = () => (
         <NineListIcon shadow={true} />
         <div class={style.featureGrid}>
             {gridEntries.map(({ icon, title, body }) => (
-                <div class={style.gridEntry}>
+                <div key={title} class={style.gridEntry}>
                     {h(icon, { class: style.icon })}
                     <span class={style.title}>{title}</span>
                     <div class={style.break} />
