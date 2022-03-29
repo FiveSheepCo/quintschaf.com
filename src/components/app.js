@@ -1,6 +1,5 @@
 import { h, Component } from 'preact';
-import Router from 'preact-router';
-import { Link } from 'preact-router';
+import Router, { Link } from 'preact-router';
 import { createHashHistory } from 'history';
 
 /** @jsx h */
@@ -19,6 +18,7 @@ import Support from '../routes/sfc/Support';
 import AppOverview from '../routes/sfc/AppOverview';
 import App9List from '../routes/sfc/App9List';
 import AppMyKeyboard from '../routes/sfc/AppMyKeyboard';
+import AppChatalyzer from '../routes/sfc/AppChatalyzer';
 import Business from '../routes/sfc/Business';
 
 export default class App extends Component {
@@ -50,6 +50,7 @@ export default class App extends Component {
 						<Home path="/" />
                         <AppOverview path="/apps" />
                         <App9List path="/app/9list" />
+                        <AppChatalyzer path="/app/chatalyzer" />
                         <AppMyKeyboard path="/app/mykeyboard" />
 						<Developers path="/developers" />
                         <Support path="/support" />
