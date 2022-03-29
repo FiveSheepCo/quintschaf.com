@@ -23,6 +23,14 @@ const AppDrawer = () => (
                 showName={true}
                 showBetaBadge={false}
             />
+            <AppSymbol
+                name="Chatalyzer"
+                img="./../../assets/chatalyzer.svg"
+                href="/app/chatalyzer"
+                showShadow={true}
+                showName={true}
+                showBetaBadge={false}
+            />
         </div>
     </div>
 );

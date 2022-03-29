@@ -24,21 +24,28 @@
     }
 
     .inner {
-        display: flex;
-        flex-flow: row wrap;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
 
-        @include media('<small') {
-            flex-flow: column nowrap;
+        @include media('>medium') {
+            gap: 5rem;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
     .inner > * {
-        margin: 0 1rem;
+        transition: all .25s ease-out;
 
-        @include media('<small') {
-            margin: .5rem auto;
-            flex-flow: column nowrap;
+        &:hover {
+            transform: translateY(-.25rem);
         }
     }
 }
