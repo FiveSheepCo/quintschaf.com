@@ -1,4 +1,7 @@
 .symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
     .linkWrapper {
@@ -12,13 +15,9 @@
     }
 
     .iconWrapper {
-        width: 128px;
-        height: 128px;
-        max-width: 128px;
-        max-height: 128px;
-
-        border-radius: 2rem;
-        border: solid .2rem white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         // Clip children to container
         overflow: hidden;
@@ -32,10 +31,6 @@
         object-fit: contain;
         object-position: center;
         image-rendering: crisp-edges;
-        width: 512px;
-        height: 512px;
-        transform-origin: top left;
-        transform: scale(0.24);
     }
 
     .betaBadge {
