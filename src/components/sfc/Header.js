@@ -11,7 +11,8 @@ const Header = () => (
 			</Link>
 			<nav role="navigation">
 				<Link activeClassName={style.active} href="/apps">Apps</Link>
-				<Link activeClassName={style.active} href="/developers">Developers</Link>
+				<Link activeClassName={style.active} href="/developers">Open Source</Link>
+                <a href="https://blog.quintschaf.com" target="_blank" rel="noopener noreferrer">Blog</a>
                 <Link activeClassName={style.active} href="/support">Support</Link>
 			</nav>
 		</div>
