@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
-import { Router } from 'preact-router';
-import { Link } from 'preact-router/match';
+import Router from 'preact-router';
+import { Link } from 'preact-router';
 import { createHashHistory } from 'history';
+
+/** @jsx h */
 
 import PageWrapper from './sfc/PageWrapper';
 import Header from './sfc/Header';

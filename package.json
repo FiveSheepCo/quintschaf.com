@@ -7,8 +7,7 @@
     "build": "npx preact build --dest docs --no-prerender; cp CNAME docs/CNAME; cp -r docs-extra/* docs/",
     "serve": "npx sirv build --port 8080 --cors --single",
     "dev": "npx preact watch",
-    "lint": "npx eslint src",
-    "test": "npx jest"
+    "lint": "npx eslint src"
   },
   "alias": {
     "react": "preact/compat",
@@ -25,25 +24,18 @@
     "eslint-config-preact": "^1.1.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "preact-cli": "^3.0.0",
-    "sass-loader": "^9.0.3",
-    "sirv-cli": "1.0.3"
+    "preact-cli": "^3.3.5",
+    "sass": "^1.49.9",
+    "sass-loader": "^10",
+    "sirv-cli": "^2.0.2"
   },
   "dependencies": {
     "feather-icons": "^4.28.0",
-    "history": "^5.0.0",
+    "history": "^5.3.0",
     "include-media": "^1.4.9",
-    "preact": "^10.3.2",
+    "preact": "^10.6.6",
     "preact-feather": "^4.1.0",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
-  },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
-    ]
+    "preact-router": "^4.0.1"
   }
 }
