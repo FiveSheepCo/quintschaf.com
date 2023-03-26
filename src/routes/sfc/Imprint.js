@@ -82,7 +82,7 @@ const Imprint = () => (
                 wir derartige Inhalte umgehend entfernen.
             </p>
             <p>
-                Quelle:<br/>
+                Quelle:<br />
                 <a href="https://www.e-recht24.de">eRecht24</a>
             </p>
         </main>

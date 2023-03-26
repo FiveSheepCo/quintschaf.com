@@ -1,13 +1,13 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from '../scss/SchafKitShowcase';
+import style from '../scss/Showcase';
 import GitHubButton from './GitHubButton';
 
 const SchafKitShowcase = () => (
 	<div class={style.showcase}>
         <h2>SchafKit</h2>
         <div class={style.subtitle}>
-            An open kit providing useful functionality.<br/>
+            An open kit providing useful functionality.<br />
             For iOS, watchOS, macOS and tvOS.
         </div>
         <div class={style.badges}>

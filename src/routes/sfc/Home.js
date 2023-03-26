@@ -7,10 +7,10 @@ import AppDrawer from '../../components/sfc/AppDrawer';
 
 const Home = () => (
 	<div class={style.home}>
-        <JumboMyKeyboard />
-        <AppDrawer />
-        <JumboOSS />
-        <NewsletterBox />
+                <JumboMyKeyboard />
+                <AppDrawer />
+                <JumboOSS />
+                <NewsletterBox />
 	</div>
 );
 

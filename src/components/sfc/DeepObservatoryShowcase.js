@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from '../scss/DeepObservatoryShowcase';
+import style from '../scss/Showcase';
 import GitHubButton from './GitHubButton';
 
 const DeepObservatoryShowcase = () => (
@@ -14,7 +14,7 @@ const DeepObservatoryShowcase = () => (
             <img src="https://flat.badgen.net/github/open-issues/quintschaf/deepobservatory?scale=1.4" />
             <img src="https://flat.badgen.net/github/closed-issues/quintschaf/deepobservatory?scale=1.4" />
         </div>
-        <GitHubButton theme="light" href="https://github.com/quintschaf/DeepObservatory">
+        <GitHubButton theme="dark" href="https://github.com/quintschaf/DeepObservatory">
             View on GitHub
         </GitHubButton>
     </div>

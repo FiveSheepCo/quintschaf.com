@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from '../scss/SchafKitShowcase';
+import style from '../scss/Showcase';
 import GitHubButton from './GitHubButton';
 
 const HackerNewsApiShowcase = () => (
@@ -13,7 +13,7 @@ const HackerNewsApiShowcase = () => (
             <img src="https://flat.badgen.net/github/open-issues/quintschaf/HackerNewsAPI?scale=1.4" />
             <img src="https://flat.badgen.net/github/closed-issues/quintschaf/HackerNewsAPI?scale=1.4" />
         </div>
-        <GitHubButton href="https://github.com/quintschaf/HackerNewsAPI">
+        <GitHubButton theme="light" href="https://github.com/quintschaf/HackerNewsAPI">
             View on GitHub
         </GitHubButton>
     </div>

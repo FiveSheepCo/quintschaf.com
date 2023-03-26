@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from '../scss/DeepObservatoryShowcase';
+import style from '../scss/Showcase';
 import GitHubButton from './GitHubButton';
 
 const IntrospectShowcase = () => (
@@ -19,7 +19,7 @@ const IntrospectShowcase = () => (
             <img src="https://flat.badgen.net/github/open-issues/siteline/swiftui-introspect?scale=1.4" />
             <img src="https://flat.badgen.net/github/closed-issues/siteline/swiftui-introspect?scale=1.4" />
         </div>
-        <GitHubButton theme="light" href="https://github.com/siteline/swiftui-introspect">
+        <GitHubButton theme="dark" href="https://github.com/siteline/swiftui-introspect">
             View on GitHub
         </GitHubButton>
     </div>
