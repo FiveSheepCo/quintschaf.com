@@ -11,8 +11,8 @@ const SwiftUiInspectShowcase = () => (
             Better introspection with a clean API and no baggage.
         </div>
         <div class={style.badges}>
-            <img src="https://flat.badgen.net/github/open-issues/quintschaf/swiftui-inspect?scale=1.4" />
-            <img src="https://flat.badgen.net/github/closed-issues/quintschaf/swiftui-inspect?scale=1.4" />
+            <img src="https://badgers.space/github/open-issues/quintschaf/swiftui-inspect?scale=1.4" />
+            <img src="https://badgers.space/github/closed-issues/quintschaf/swiftui-inspect?scale=1.4" />
         </div>
         <GitHubButton theme="light" href="https://github.com/quintschaf/swiftui-inspect">
             View on GitHub

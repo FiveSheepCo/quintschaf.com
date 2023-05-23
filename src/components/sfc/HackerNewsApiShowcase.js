@@ -10,8 +10,8 @@ const HackerNewsApiShowcase = () => (
             A Swift Wrapper for the Hacker News API.
         </div>
         <div class={style.badges}>
-            <img src="https://flat.badgen.net/github/open-issues/quintschaf/HackerNewsAPI?scale=1.4" />
-            <img src="https://flat.badgen.net/github/closed-issues/quintschaf/HackerNewsAPI?scale=1.4" />
+            <img src="https://badgers.space/github/open-issues/quintschaf/HackerNewsAPI?scale=1.4" />
+            <img src="https://badgers.space/github/closed-issues/quintschaf/HackerNewsAPI?scale=1.4" />
         </div>
         <GitHubButton theme="light" href="https://github.com/quintschaf/HackerNewsAPI">
             View on GitHub

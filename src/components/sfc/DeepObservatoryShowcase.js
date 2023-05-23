@@ -11,8 +11,8 @@ const DeepObservatoryShowcase = () => (
             Available for iOS 13 and higher.
         </div>
         <div class={style.badges}>
-            <img src="https://flat.badgen.net/github/open-issues/quintschaf/deepobservatory?scale=1.4" />
-            <img src="https://flat.badgen.net/github/closed-issues/quintschaf/deepobservatory?scale=1.4" />
+            <img src="https://badgers.space/github/open-issues/quintschaf/deepobservatory?scale=1.4" />
+            <img src="https://badgers.space/github/closed-issues/quintschaf/deepobservatory?scale=1.4" />
         </div>
         <GitHubButton theme="dark" href="https://github.com/quintschaf/DeepObservatory">
             View on GitHub

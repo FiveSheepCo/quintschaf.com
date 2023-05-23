@@ -16,8 +16,8 @@ const IntrospectShowcase = () => (
             package built by the awesome team @siteline.
         </div>
         <div class={style.badges}>
-            <img src="https://flat.badgen.net/github/open-issues/siteline/swiftui-introspect?scale=1.4" />
-            <img src="https://flat.badgen.net/github/closed-issues/siteline/swiftui-introspect?scale=1.4" />
+            <img src="https://badgers.space/github/open-issues/siteline/swiftui-introspect?scale=1.4" />
+            <img src="https://badgers.space/github/closed-issues/siteline/swiftui-introspect?scale=1.4" />
         </div>
         <GitHubButton theme="dark" href="https://github.com/siteline/swiftui-introspect">
             View on GitHub
